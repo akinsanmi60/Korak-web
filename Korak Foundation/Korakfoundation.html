@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>KoRakFoundation</title>
+</head>
+
+<style>
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+        /*global*/
+    .container{
+        width: 85%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    header{
+        min-height: 40px;
+        background: rgb(250, 250, 103);
+        padding: 20px;
+        border-bottom: chocolate 3px solid;
+        color: chocolate;
+    }
+
+    header a{
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+    }
+
+    header nav{
+        float: left;
+        margin-top: -10px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    header li{
+        display: inline;
+        padding: 0 20px 0 20px;
+        float: left;
+    }
+
+    li a:hover{
+            color: chocolate;
+        }
+        
+    header #tdesign h1{
+        margin: 0;
+        margin-bottom: -27px;
+        font-size: 40px;
+    }
+
+    header #tdesign p{
+        font-size: 11px;
+    }
+
+    header #tdesign{
+        float: left;
+       
+    }
+
+    .btn1{
+        width: 100px;
+        height: 30px;
+        background:chocolate;
+        border: 2px solid chocolate;
+        border-radius: 50px;
+        margin-top: 20px;
+        color: black;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    
+
+    #case1{
+        background:url('../image/edmund.jpg');
+        min-height: 650px;
+    }
+
+    #case1 h1{
+        font-size: 25px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color:chocolate;
+    }  
+
+    #case1 p{
+        font-size: 20px;
+        color: chocolate;
+    }
+
+    #case2{
+        display: flex;
+        flex-direction: row;
+        min-height: 200px;
+        border: solid 3px chocolate;
+        box-sizing: border-box;
+        margin-top: 15px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        
+        
+    }
+
+    #case2 img{
+        padding: 50px;
+        float: left;
+        width:400px;
+        margin-left: 2px;
+        border-radius: 50%;
+    }
+
+    #case2 .btn0{
+        width: 120px;
+        height: 35px;
+        background:chocolate;
+        border: 2px solid chocolate;
+        border-radius: 50px;
+        margin-top: 20px;
+        color: black;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+        margin-left: 30px;
+        font-weight: bold;
+    }
+
+    #case2 .letter{
+        padding: 50px;
+        margin-left: 50px;
+        text-align: center;
+        color: chocolate;
+        font-size: 20px;
+        margin-bottom: -17px;
+    }
+
+    #case2 .quote{
+        text-align: center;
+        margin-top: 100px;
+        color: chocolate;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #case3{
+        background:url('../image/zach-vessel1.jpg');
+        min-height: 500px;
+        background-size: cover;margin-top: 20px;
+    }
+
+    #case3 .letter{
+        padding: 50px;
+        margin-left: 50px;
+        text-align: center;
+        color: chocolate;
+        font-size: 20px;
+        
+        float: right;
+    }
+    
+    #case3 .btn2{
+        width: 250px;
+        height: 50px;
+        background:chocolate;
+        border: 2px solid chocolate;
+        border-radius: 50px;
+        margin-top: 70px;
+        color: black;
+        font-size: 18px;
+        outline: none;
+        cursor: pointer;
+        margin-right: 25px;
+        font-weight: bold;
+       
+    }
+
+    #case3 .quote{
+        text-align:center;
+        margin-top: 100px;
+        color: chocolate;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+  
+
+    #case4 #glory{
+       display: flex;
+       flex-direction: row;
+       margin-bottom: 50px;
+    }
+    
+    #case4 .image{
+        padding: 20px;
+        float: left;
+        border: solid;
+        background: rgb(250, 250, 103);
+        margin-left: 50px;
+        border-radius: 50px;
+    }
+    
+    #case4 .btn{
+        width: 150px;
+        height: 40px;
+        background:chocolate;
+        border: 2px solid chocolate;
+        border-radius: 50px;
+        margin-top: 7px;
+        color: black;
+        font-size: 18px;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #case4 p{
+        font-size: 18px;
+        color: chocolate;
+        text-align: center;
+    }
+
+    #case4 h1{
+        font-size: 30px;
+        color: chocolate;
+        border: chocolate 5px solid;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        padding: 10px;
+    }
+
+    footer{
+        min-height: 250px;
+        background: rgb(0, 0, 59);
+        padding: 20px;
+        color: white;
+    }
+
+    footer .mega{
+        display: inline-flex;
+    }
+
+    footer .mega h1{
+        font-size: 20px;
+        margin-top: 23px;
+    }
+
+    footer .mega {
+        font-size: 15px;
+    }
+
+
+
+    footer ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    footer #contactus{
+        width: 170px;
+        margin-right: 40px;
+    }
+
+    footer #gallery img{
+        width: 150px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        
+   }
+
+   footer #gallery{
+       margin: 15px;
+       padding: 20px;
+      
+   }
+   footer #gallery #g1{
+       flex-direction:row;
+       display: flex;
+   }
+       
+   footer #gallery #g2{
+       flex-direction:row;
+       display: flex;
+   }
+   .newsletter{
+       margin-left: 60px;
+   }
+
+   .newsletter .button{
+        width: 250px;
+        height: 35px;
+        background:chocolate;
+        border: 2px solid chocolate;
+        border-radius: 50px;
+        margin-top: 10px;
+        color: black;
+        font-size: 18px;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+   }
+
+   input{
+        width: 260px;
+        height: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        outline: none;
+    }
+
+
+.icon ion-icon{
+    text-decoration: none;
+    color: white;
+    padding-left: 3px;
+    padding-top: 15px;
+    margin-left: 6px;
+    font-size: 35px;
+}
+
+.icon ion-icon:hover{
+    border: chocolate;
+    border-bottom:5px solid chocolate;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 20px;
+}
+
+
+    
+
+
+
+       
+
+   
+
+
+
+   
+
+</style>
+
+
+
+
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div id="tdesign">
+                <h1>KoRak</h1>
+                <p>FOUNDATION</p>
+            </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="Korakfoundation.html">Home</a></li>
+                        <li><a href="About KoRakfoundation.html">About</a></li>
+                        <li><a href="#">Departmemt</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="OurVolunteersKoRakfoundation.html">Our Volunteers</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <button class="btn1" type="submit">Donations</button>
+        </div>
+    </header>
+
+    <section id="case1">
+        <div class="container">
+            <h1>“When you are kind to someone in trouble, <br> you hope they’ll remember and be kind to someone else. <br> And it’ll become like a wildfire.” <br> <br> “When you are kind to someone in trouble, <br> you hope they’ll remember and be kind to someone else. <br> And it’ll become like a wildfire.”</h1>
+            <p><em> ..........Whoopi Goldberg</em></p>
+        </div>
+    </section>
+
+    <section id="case2">
+        <div class="container">
+            
+            <img src="../image/seth2.jpg" alt="a boy with ball">
+          
+            <div class="letter">
+                    <h1>Welcome to <span class="highlight">KoRak</span> <span class="highlight1">Foundation</span></h1> 
+                    <p>KoRak Foundation is a non-governmental organization (NGO) set up as an outreach focused on
+                         maternal and child health, adolescent sexual health, nutrition, education, and deworming, tackling child slavery
+                        and exploitation, increasing opportunities for girls and young women.
+                         Also, men and women suffering domestic violence in abusive relationships.
+                    </p>   
+            
+                    <button class="btn0" type="submit">Read More</button>
+
+
+                    <blockquote class="quote">“Think of giving not as a duty but as a privilege.”  <cite>John D. Rockefeller Jr.</cite> </blockquote>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id="case3">
+        <div class="container">
+            <div class="letter">
+                <blockquote class="quote">“Love and kindness are never wasted. <br> 
+                    They always make a difference. <br>
+                    They bless the one who receives them, <br>
+                    and they bless you, the giver."<br>
+                    .... <cite>Barbara de Angelis</cite></blockquote>
+                <button class="btn2" type="submit">Become a Volunteer</button>
+    
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="case4">
+        <div class="container">
+            <h1>Join Our Projects</h1>
+
+           <div id="glory">
+
+            <div class="image">
+                <p>Clothing</p>
+                <button class="btn" type="submit">Donations</button>
+            </div>
+           
+            <div class="image">
+                <p>Food-items</p>
+                <button class="btn" type="submit">Donations</button>
+            </div>
+
+            <div class="image">
+                <p>Medications</p>
+                <button class="btn" type="submit">Donations</button>
+            </div>
+
+            <div  class="image">
+                <p>Educational  Materials</p>
+                <button class="btn" type="submit">Donations</button>
+            </div>
+
+           </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            
+            <div class="mega">
+                <div id="contactus">
+                    <h1>Contact Us</h1>
+                    <p>Nos 21,  AIT road, <br>Alagbado,Lagos</p>
+                    <ul>
+                        <li>Tel: 08164279799</li>
+                        <li>Tel: 08026699439</li>
+                        <li>Tel: 08137592235</li>
+                    </ul>
+                </div>
+    
+                <div id="gallery">
+                    <div id="g1">
+                        <div><img src="../image/nathaniel.jpg" alt=""></div>
+                        <div><img src="../image/bennet1.jpg" alt=""></div>
+                        <div><img src="../image/muhammadtaha-ibrahim-24.jpg" alt=""></div>
+                    </div>
+
+                    <div id="g2">
+                            <div><img src="../image/zachvessel2.jpg" alt=""></div>
+                            <div><img src="../image/zach3.jpg" alt=""></div>
+                            <div><img src="../image/tucker-tangeman-111.jpg" alt=""></div>
+                    </div>
+                  
+                </div>
+
+                <div class="newsletter">
+                    <h1>Subscribe To Our Newsletter</h1>
+                    <form>
+                        <input type="email" name="email" id="email" placeholder="Enter e-mail">
+                        <button type="submit" class="button">Subscribe</button>
+                    </form>
+
+                    <div class="icon">
+                        <a href=""><ion-icon name='logo-facebook'></ion-icon></a>
+                        <a href=""><ion-icon name='logo-whatsapp'></ion-icon></a>
+                        <a href=""><ion-icon name='logo-instagram'></ion-icon></a>
+                        <a href=""><ion-icon name='logo-twitter'></ion-icon></a>
+                        <a href=""><ion-icon name='logo-google'></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footerbottom" >
+                <blockquote> “The best way to find yourself is to lose yourself in the service of others.”...... <em>Mahatma Gandhi</em></blockquote>
+            </div>
+
+        </div>
+           
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+</body>
+
+</html>
